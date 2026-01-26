@@ -21,7 +21,7 @@
 **2. 各種ファイルの中にあるコードのコピー**  
 ※すべてhtmlファイルにcssやJacascriptのコードを記述しもらっても構いません
 **htmlファイルのコピー**  
-htmlファイルの10行目にある<div class="calendar-container">というダクから32行目の</div>というタグまでをコピーしてください
+htmlファイルの10行目にある「div class="calendar-container"」というダクから32行目の「/div」というタグまでをコピーしてください
 
 ---
 
