@@ -1,0 +1,124 @@
+  :root {
+            --primary-color: #4a90e2;
+            --today-bg: #e8f0fe;
+            --today-text: #1967d2;
+            --text-color: #333;
+            --bg-color: #f5f7fa;
+            --holiday-color: #eb5757;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calendar-container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: var(--text-color);
+        }
+
+        .nav-btn {
+            background: none;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 5px 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 1.1rem;
+        }
+
+        .nav-btn:hover {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            color: #999;
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        td {
+            text-align: center;
+            padding: 12px 0;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background 0.2s;
+            width: 14.28%;
+            position: relative;
+        }
+
+        td:hover:not(.empty) {
+            background-color: #f0f0f0;
+        }
+
+        .today {
+            background-color: var(--today-bg) !important;
+            color: var(--today-text);
+            font-weight: bold;
+        }
+
+        .today::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: var(--today-text);
+            border-radius: 50%;
+        }
+
+        .sun, .holiday { color: var(--holiday-color); }
+        .sat { color: #2f80ed; }
+
+        .empty {
+            cursor: default;
+        }
+
+        /* 祝日名のツールチップ的な表示用 */
+        td[title]:hover::before {
+            content: attr(title);
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            z-index: 10;
+        }
