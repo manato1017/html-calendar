@@ -6,7 +6,9 @@
 
 ## 注意事項
 
-**html,css,javascriptの知識が必要です**
+> [!CAUTION]
+> html,css,javascriptの知識が必要です  
+> 万が一WEB CALENDERを利用して不利益が生じた場合には一切の責任を負いません
 
 ---
 
