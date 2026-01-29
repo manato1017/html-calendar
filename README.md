@@ -4,7 +4,7 @@
 
 --- 
 
-## $\color{red}{\text{注意事項}}$
+## 注意事項
 
 **html,css,javascriptの知識が必要です**
 
