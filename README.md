@@ -19,7 +19,33 @@
 ※すべてhtmlファイルにcssやJacascriptのコードを記述しもらっても構いません
 **htmlファイルのコピー**  
 htmlファイルの10行目にある「div class="calendar-container"」というダクから32行目の「/div」というタグまでをコピーしてください
+以下のコードコピーしても使えます
+```ruby
+<div class="calendar-container">
+    <div class="calendar-header">
+        <button class="nav-btn" id="prev">&lt;</button>
+        <h2 id="monthYear"></h2>
+        <button class="nav-btn" id="next">&gt;</button>
+    </div>
+    <table id="calendar">
+        <thead>
+            <tr>
+                <th class="sun">日</th>
+                <th>月</th>
+                <th>火</th>
+                <th>水</th>
+                <th>木</th>
+                <th>金</th>
+                <th class="sat">土</th>
+            </tr>
+        </thead>
+        <tbody id="calendar-body">
+            <!-- JavaScriptで生成 -->
+        </tbody>
+    </table>
+</div>
 
+```
 ---
 
 **cssファイルのコピー**  
